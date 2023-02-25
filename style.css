@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navigation {
     height: 80px;
-    background: linear-gradient(45deg, #4199fe, #74b4fe);
+    background: linear-gradient(-90deg, #4199fe, #74b4fe);
     z-index: 9;
 }
 
@@ -66,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a:visited:hover {
+nav ul li a:visited:hover:not(.btn-cta) {
     background: #2581DC;
     color: #ffffff;
 }
@@ -125,6 +126,13 @@ nav ul li ul li a {
     background-color: #478ac9;
     border-radius: 10px;
     color: whitesmoke;
+    font-weight: bold;
+    transition: all .5s;
+}
+.btn-cta:hover {
+    background-color: #635985;
+    color: black;
+
 }
 
 /* FIRST CONTENT */
@@ -176,7 +184,6 @@ iframe {
 /* CONTENT KEEMPAT */
 /* CONTENT KEEMPAT */
 
-
 .image {
     display: flex;
     flex-wrap: wrap;
@@ -185,13 +192,19 @@ iframe {
     margin-top: 100px;
 }
 
-.image h4 {
-    font-weight: bold;
-}
-
 .cdn {
     width: 50%;
     margin: auto;
+}
+
+.cdn h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cdn h4 {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .cdn p {
@@ -216,6 +229,11 @@ iframe {
 /* CONTENT KELIMA */
 /* CONTENT KELIMA */
 /* CAROUSEL CARD */
+.title_car {
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .cards-wrapper {
     display: flex;
     justify-content: center;
@@ -255,9 +273,19 @@ iframe {
     margin-bottom: 200px;
 }
 
+/* FOOTER */
+.poter {
+    background-color: #40513B;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    padding-top: 15px;
+    color: white;
+}
 
 /* RESPONSIVE */
 /* RESPONSIVE */
+
 @media (min-width: 768px) {
     .card img {
         height: 11em;
@@ -296,6 +324,7 @@ iframe {
     .gambar img {
         width: 250px;
     }
+
     .wrap {
         width: 100%;
         padding: 20px;
@@ -387,3 +416,7 @@ iframe {
         transform: rotate(-45deg);
     }
 }
+
+
+/* FILE EKSKUL */
+/* FILE EKSKUL */
