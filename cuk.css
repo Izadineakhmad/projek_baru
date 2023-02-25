@@ -109,6 +109,195 @@ nav ul li ul li a {
     width: 70px;
 }
 
+/* Navbar */
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    transition: top .3s ease;
+}
+
+#header.show {
+    top: -90px;
+}
+
+.btn-cta {
+    background-color: #478ac9;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+/* FIRST CONTENT */
+.parallax {
+    width: 100%;
+    height: 100vh;
+}
+
+.intro {
+    background-image: url('img/7.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* CONTENT KEDUA  */
+/* SEJARAH */
+.sejarah {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.wrap h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.wrap p {
+    font-family: 'open-sans', sans-serif;
+    font-size: 15px;
+    text-indent: 40px;
+}
+
+.wrap {
+    width: 60%;
+    margin: auto;
+}
+
+/* CONTENT KETIGA */
+.profile {
+    text-align: center;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+/* CONTENT KEEMPAT */
+/* CONTENT KEEMPAT */
+
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.image h4 {
+    font-weight: bold;
+}
+
+.cdn {
+    width: 50%;
+    margin: auto;
+}
+
+.cdn p {
+    text-indent: 40px;
+    margin-bottom: 30px;
+}
+
+.gambar {
+    width: 420px;
+}
+
+.gambar img {
+    border-radius: 25px;
+    width: 400px;
+}
+
+.accordion-item button {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* CONTENT KELIMA */
+/* CONTENT KELIMA */
+/* CAROUSEL CARD */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* CONTENT KEENAM */
+/* CONTENT KEENAM */
+.wrap_6 i {
+    width: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+
+/* RESPONSIVE */
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .card img {
+        height: 11em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    iframe {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .image {
+        margin-right: 80px;
+    }
+
+    .cdn {
+        width: 100%;
+    }
+
+    .cdn h2,
+    .gambar {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    .gambar img {
+        width: 250px;
+    }
+}
+
 @media only screen and (max-width: 980px) {
     .nav-mobile {
         display: block;
@@ -194,137 +383,3 @@ nav ul li ul li a {
         transform: rotate(-45deg);
     }
 }
-
-/* Navbar */
-#header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    transition: top .3s ease;
-}
-
-#header.show {
-    top: -90px;
-}
-
-.btn-cta {
-    background-color: #478ac9;
-    border-radius: 10px;
-    color: whitesmoke;
-}
-
-/* FIRST CONTENT */
-.parallax {
-    width: 100%;
-    height: 100vh;
-}
-
-.intro {
-    background-image: url('img/7.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-/* CONTENT KEDUA  */
-/* SEJARAH */
-.sejarah {
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-
-.wrap h2 {
-    margin-bottom: 10px;
-}
-
-.wrap p {
-    font-family: 'open-sans', sans-serif;
-    font-size: 20px;
-    text-indent: 40px;
-}
-
-.wrap {
-    width: 60%;
-    margin: auto;
-}
-
-/* CONTENT KETIGA */
-.profile {
-    text-align: center;
-}
-
-iframe {
-    border-radius: 15px;
-}
-
-/* CONTENT KEEMPAT */
-/* CONTENT KEEMPAT */
-.foto {
-    margin-bottom: 200px;
-}
-
-.image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 80px;
-    margin-top: 100px;
-}
-
-.image h3 {
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.cdn {
-    width: 50%;
-    margin: auto;
-}
-
-.cdn p {
-    text-indent: 40px;
-    margin-bottom: 30px;
-}
-
-.image img {
-    border-radius: 25px;
-    width: 400px;
-}
-
-.accordion-item button {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-/* CONTENT KELIMA */
-.cards-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  .card img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-  }
-  .carousel-inner {
-    padding: 1em;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  @media (min-width: 768px) {
-    .card img {
-      height: 11em;
-    }
-  }
