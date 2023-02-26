@@ -1,3 +1,12 @@
+// LOADER
+$(document).ready(function(){
+    setTimeout(function(){
+      $('body').addClass('loaded');
+      $('h1').css('color','#222222')
+    }, 1200);
+  });
+
+// NAVBAR DROPDOWN
 (function ($) {
     $(function () {
 
@@ -31,6 +40,7 @@
 })(jQuery);
 
 
+// ANIMATION NAVBAR
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;

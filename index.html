@@ -27,9 +27,20 @@
 
     <!-- STYLE.CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <h2 class="loding">Loading...</h2>
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+
+    <!-- NAVBAR -->
     <section class="navigation show" id="header">
         <div class="nav-container">
             <div class="brand">
@@ -48,7 +59,7 @@
                         <a href="#!">Kejurusan</a>
                         <ul class="navbar-dropdown">
                             <li>
-                                <a href="#!">Jurusan</a>
+                                <a href="jurusan.html">Jurusan</a>
                             </li>
                             <li>
                                 <a href="#!">Program Kejurusan</a>
@@ -71,13 +82,15 @@
         </div>
     </section>
 
-    <!-- konten pertama -->
+    <!-- CONTENT PERTAMA -->
+    <!-- PARALLAX -->
     <div class="parallax intro">
         <div class="content-1"></div>
     </div>
 
 
     <!-- CONTENT KEDUA -->
+    <!-- SEJARAH -->
     <div class="sejarah">
         <div class="wrap">
             <h2>Sejarah Singkat SMKN 2 Jakarta</h2>
@@ -96,6 +109,7 @@
     </div>
 
     <!-- CONTENT KETIGA -->
+    <!-- YOUTUBE -->
     <div class="profile">
         <iframe width="1100" height="560" src="https://www.youtube.com/embed/SZ6eG_l40lo" title="YouTube video player"
             frameborder="0"
@@ -104,7 +118,7 @@
     </div>
 
     <!-- CONTENT KEEMPAT -->
-
+    <!-- STRUKTUR -->
     <div class="image">
         <div class="gambar">
             <img src="img/WhatsApp Image 2023-02-22 at 11.04.35.jpeg" alt="">
@@ -222,7 +236,7 @@
 
     <!-- CONTENT KELIMA -->
     <!-- CAROUSEL CARD -->
-    <div id="carouselExample" class="carousel slide text-center md">
+    <div id="carouselExample" class="carousel slide text-center md pb-5">
         <h2 class="title_car mb-5 mt-5">CAROUSEL CARD</h2>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -347,25 +361,25 @@
         </button>
     </div>
 
-    <!-- CONTENT KEENAM -->
-    <div class="icons text-center">
-        <div class="wrap_6">
-            <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
+    <!-- FOOTER and MEDIA SOSIAL -->
     <footer>
         <div class="poter">
-            <p>Copyright &copy; 2023 - PPLG_1. All Right Reserved</p>
+            <div class="icons text-center">
+                <div class="wrap_6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quibusdam corrupti facere praesentium quod fugit nulla quam aliquid asperiores ratione? Minima fugiat atque ratione dolorum architecto consequuntur suscipit distinctio repudiandae!</p>
+                    <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+        
+                </div>
+            </div>
+            <p>Copyright &copy; 2023 - PPLG_1. All Right Reserved</p><br>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
+
 </html>
